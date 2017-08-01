@@ -14,6 +14,18 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
 	@Column
 	private String name;
 
