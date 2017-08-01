@@ -14,18 +14,6 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setPrice(BigDecimal price) {
-		this.price = price;
-	}
-
 	@Column
 	private String name;
 
@@ -52,6 +40,19 @@ public class Product {
 		return price;
 	}
 
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	//TODO not necessary?
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
